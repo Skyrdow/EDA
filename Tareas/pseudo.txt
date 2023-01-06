@@ -1,0 +1,48 @@
+1. acum + 1
+1.1 si acum == camino_max terminar sin guardar
+2. verificar vecinos
+2.1 si son X no buscar
+2.2 si son ooi no buscar
+2.3 si es S guardar camino y acum
+3. buscar en los vecinos
+
+int n
+int m
+int matriz[n][m] (n x m)
+int cam_max = n*m
+int camino[cam_max]
+int camino_acum
+
+void algoritmo_principal(int n, int m, int matriz[n][m])
+{
+	int cam_max = n*m // si es mayor a n*m se abandona
+	int comienzo[2]
+	int camino[cam_max][2] // { {0,0}, {0,1}, {0,2} ... }
+	comienzo = buscar_e(n, m, matriz)
+	camino = buscar(n, m, matriz)
+}
+
+void buscar(int n, int m, int matriz[n][m], int x, int y, int acum, int cam_max, int camino_actual[cam_max])
+{
+	acum = acum + 1
+	if acum >= cam_max
+		return NULL
+	if matriz[x][y] == 
+
+}
+
+int buscar_e(int n, int m, int matriz[n][m])
+{
+	int res[2]
+	for i = 0 to n-1
+		for j = 0 to m-1
+			if matriz[n][m] == 'e'
+				res[0] = n
+				res[1] = m
+				return res
+}
+
+bool comprobar_vecino()
+{
+	for i=0 to 
+}
